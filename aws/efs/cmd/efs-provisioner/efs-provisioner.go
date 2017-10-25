@@ -220,7 +220,7 @@ func (p *efsProvisioner) getRemotePath(options controller.VolumeOptions) string 
 }
 
 func (p *efsProvisioner) getDirectoryName(options controller.VolumeOptions) string {
-	return options.PVC.Name + "-" + options.PVName
+	return options.PVC.Name
 }
 
 // Delete removes the storage asset that was created by Provision represented
